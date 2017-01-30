@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array</title>
+</head>
+<body>
+<script>
+    // /array task - 5
+
+    const number = [];
+    while(true) {
+        let num = prompt("Insert number", 0);
+        if(num === "" || num === null || isNaN(num)) break;
+        number.push(+num);
+    }
+    const result = number.reduce((acc, index) => {
+        return acc + index;
+    }, 0);
+    alert(`array: [${number}] sum = ${result}`);
+</script>
+</body>
+</html>
